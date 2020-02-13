@@ -1,0 +1,16 @@
+version: '2'
+services:
+  comhand-mongodb:
+    image: mongo:4.0.16
+    ports:
+      - '27017:27017'
+    command: mongos --configdb comhand-mongodb-config
+  comhand-mongodb-node:
+    build:
+      context: .
+      dockerfile: mongodb/MongoDB.Dockerfile
+    command: mongod --replSet rs1 --noprealloc --smallfiles
+  comhand-mongodb-config:
+    image: mongo:4.0.16
+    container_name: comhand-mongodb-config
+    command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db
