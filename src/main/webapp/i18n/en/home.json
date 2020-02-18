@@ -5,13 +5,13 @@
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     },
-    "question": "If you have any question on JHipster:",
+    "question": "Do you have any question ?:",
     "link": {
       "homepage": "JHipster homepage",
       "stackoverflow": "JHipster on Stack Overflow",
       "bugtracker": "JHipster bug tracker",
       "chat": "JHipster public chat room",
-      "follow": "follow @jhipster on Twitter"
+      "follow": "follow @Lilifoodie_ on Instagram"
     },
     "like": "If you like JHipster, don't forget to give us a star on",
     "github": "GitHub"
