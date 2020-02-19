@@ -1,7 +1,7 @@
 {
   "home": {
     "title": "Com'Hand ",
-    "subtitle": "Le site qui vous tend la main",
+    "subtitle": "Le site qui tend la main au circuit court",
     "logged": {
       "message": "Vous êtes connecté en tant que \"{{username}}\"."
     },
