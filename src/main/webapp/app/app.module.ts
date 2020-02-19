@@ -7,6 +7,7 @@ import { ComhandCoreModule } from 'app/core/core.module';
 import { ComhandAppRoutingModule } from './app-routing.module';
 import { ComhandHomeModule } from './home/home.module';
 import { ComhandEntityModule } from './entities/entity.module';
+import { ComhandAppJeSuisModule } from './je-suis/je-suis.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { MainComponent } from './layouts/main/main.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
@@ -21,6 +22,7 @@ import { ErrorComponent } from './layouts/error/error.component';
     ComhandSharedModule,
     ComhandCoreModule,
     ComhandHomeModule,
+    ComhandAppJeSuisModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     ComhandEntityModule,
     ComhandAppRoutingModule

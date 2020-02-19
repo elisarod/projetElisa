@@ -16,10 +16,16 @@
                     </span>
                 </a>
             </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                <a class="nav-link" routerLink="je-suis" (click)="collapseNavbar()">
+                                    <fa-icon icon="hand-spock" fixedWidth="true"></fa-icon>
+                                    <span jhiTranslate="global.menu.je-suis">Je Suis</span>
+                                </a>
+                            </li>
             <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
             <!--*ngSwitchCase="true" ici je l'ai enlevé pour que la case "Je suis ?" soit dispo hors connection -->
-            <li    ngbDropdown class="nav-item dropdown pointer" display="dynamic" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-                <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu">
+           <!-- <li    ngbDropdown class="nav-item dropdown pointer" display="dynamic" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="je_suis-menu">
                     <span>
                         <fa-icon icon="th-list"></fa-icon>
                         <span jhiTranslate="global.menu.entities.main">
@@ -27,9 +33,9 @@
                         </span>
                     </span>
                 </a>
-                <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
-                    <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
-                    <li>
+                <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu"> -->
+                    <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here
+            <li>
                         <a class="dropdown-item" routerLink="entities/restaurateur" routerLinkActive="active" (click)="collapseNavbar()">
                             <fa-icon icon="user" fixedWidth="true"></fa-icon>
                             <span jhiTranslate="global.menu.entities.restaurateur">Restaurateur</span>
@@ -42,7 +48,7 @@
                         </a>
                     </li>
                 </ul>
-            </li>
+            </li> -->
             <li *jhiHasAnyAuthority="'ROLE_ADMIN'" ngbDropdown class="nav-item dropdown pointer" display="dynamic" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
                 <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="admin-menu">
                     <span>
