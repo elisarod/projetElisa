@@ -9,7 +9,7 @@ export class JeSuisComponent implements OnInit {
   message: string;
 
   constructor() {
-    this.message = 'JeSuisComponent message';
+    this.message = '';
   }
 
   ngOnInit(): void {}

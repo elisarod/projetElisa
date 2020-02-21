@@ -9,7 +9,7 @@ export class PageTwoComponent implements OnInit {
   message: string;
 
   constructor() {
-    this.message = 'PageTwoComponent message';
+    this.message = '';
   }
 
   ngOnInit(): void {}

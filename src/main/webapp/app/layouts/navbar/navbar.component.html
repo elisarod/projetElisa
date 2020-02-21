@@ -16,12 +16,15 @@
                     </span>
                 </a>
             </li>
-            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+
+            <li ngbDropdown class="nav-item dropdown pointer" display="dynamic" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
                                 <a class="nav-link" routerLink="je-suis" (click)="collapseNavbar()">
                                     <fa-icon icon="hand-spock" fixedWidth="true"></fa-icon>
-                                    <span jhiTranslate="global.menu.je-suis">Je Suis</span>
+                                    <span jhiTranslate="global.menu.je-suis">Je suis ?</span>
                                 </a>
                             </li>
+
+
             <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
             <!--*ngSwitchCase="true" ici je l'ai enlevé pour que la case "Je suis ?" soit dispo hors connection -->
            <!-- <li    ngbDropdown class="nav-item dropdown pointer" display="dynamic" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
@@ -122,6 +125,7 @@
                     </li>
                 </ul>
             </li>
+
             <li ngbDropdown class="nav-item dropdown pointer" display="dynamic" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
                 <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="account-menu">
                     <span *ngIf="!getImageUrl()">
